@@ -122,17 +122,18 @@ public class V3__Update_table implements JdbcMigration {
 ```
 
 Run migration:
-
-    java -jar target/bootique.flyway.demo-1.0-SNAPSHOT.jar --config=config.yml --migrate
-    
+```bash
+java -jar target/bootique.flyway.demo-1.0-SNAPSHOT.jar --config=config.yml --migrate
+```    
 Result:
-    
-    ...
-    INFO  [2017-06-28 16:03:23,888] main o.f.c.i.c.DbMigrate: Current version of schema `mydb`: << Empty Schema >>
-    INFO  [2017-06-28 16:03:23,888] main o.f.c.i.c.DbMigrate: Migrating schema `mydb` to version 1 - Create new table
-    INFO  [2017-06-28 16:03:23,950] main o.f.c.i.c.DbMigrate: Migrating schema `mydb` to version 2 - Insert data
-    INFO  [2017-06-28 16:03:23,958] main o.f.c.i.c.DbMigrate: Migrating schema `mydb` to version 3 - Update table
-    INFO  [2017-06-28 16:03:23,966] main o.f.c.i.c.DbMigrate: Successfully applied 3 migrations to schema `mydb` (execution time 00:00.195s).
+```
+...
+INFO  [2017-06-28 16:03:23,888] main o.f.c.i.c.DbMigrate: Current version of schema `mydb`: << Empty Schema >>
+INFO  [2017-06-28 16:03:23,888] main o.f.c.i.c.DbMigrate: Migrating schema `mydb` to version 1 - Create new table
+INFO  [2017-06-28 16:03:23,950] main o.f.c.i.c.DbMigrate: Migrating schema `mydb` to version 2 - Insert data
+INFO  [2017-06-28 16:03:23,958] main o.f.c.i.c.DbMigrate: Migrating schema `mydb` to version 3 - Update table
+INFO  [2017-06-28 16:03:23,966] main o.f.c.i.c.DbMigrate: Successfully applied 3 migrations to schema `mydb` (execution time 00:00.195s).
+```
 
 All migrations are checked against the metadata table SCHEMA_VERSION located or created from scratch by Flyway.
 
