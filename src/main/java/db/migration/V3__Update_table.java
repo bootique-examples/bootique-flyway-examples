@@ -6,7 +6,6 @@ import org.slf4j.LoggerFactory;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
-import java.sql.SQLException;
 
 /**
  * Example of a Java-based migration.
@@ -21,8 +20,6 @@ public class V3__Update_table implements JdbcMigration {
 
         try {
             statement.execute();
-        } catch (SQLException e) {
-            LOGGER.error("Migration failed", e);
         } finally {
             statement.close();
         }
