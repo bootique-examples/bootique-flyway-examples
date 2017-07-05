@@ -1,0 +1,13 @@
+jdbc:
+  mysql:
+    url: jdbc:mysql://localhost:3306/mydb?nullNamePatternMatchesAll=true&connectTimeout=0&autoReconnect=true
+    driverClassName: com.mysql.jdbc.Driver
+    initialSize: 1
+    username: root
+    password:
+
+flyway:
+  locations:
+    - db/migration
+  dataSources:
+    - mysql
