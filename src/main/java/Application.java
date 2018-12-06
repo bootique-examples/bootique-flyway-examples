@@ -3,11 +3,13 @@ import com.google.inject.Module;
 import io.bootique.Bootique;
 
 public class Application implements Module {
+
     public static void main(String[] args) {
         Bootique.app(args)
-                .module(Application.class)
                 .autoLoadModules()
-                .run();
+                .module(Application.class)
+                .exec()
+                .exit();
     }
 
     @Override
