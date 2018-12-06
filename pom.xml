@@ -43,6 +43,10 @@
             <artifactId>bootique</artifactId>
         </dependency>
         <dependency>
+            <groupId>io.bootique.jdbc</groupId>
+            <artifactId>bootique-jdbc-tomcat</artifactId>
+        </dependency>
+        <dependency>
             <groupId>io.bootique.flyway</groupId>
             <artifactId>bootique-flyway</artifactId>
         </dependency>
