@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/bootique-examples/bootique-flyway-demo.svg)](https://travis-ci.org/bootique-examples/bootique-flyway-demo)
+[![verify](https://github.com/bootique-examples/bootique-flyway-demo/actions/workflows/verify.yml/badge.svg)](https://github.com/bootique-examples/bootique-flyway-demo/actions/workflows/verify.yml)
 # bootique-flyway-demo
 
 An example of versioned database migration built on [Flyway](https://flywaydb.org) integrated into [Bootique](http://bootique.io).
